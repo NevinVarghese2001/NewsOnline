@@ -1,0 +1,18 @@
+<div class="container mt-5 w-25 bg-light p-4 ">
+    <h2>Login Form</h2>
+    <form action="" method="" [formGroup]="loginForm" (ngSubmit)="login()">
+      <div class="form-group p-4">
+        <label for="username">Username:</label>
+        <input formControlName="uname"  type="text" class="form-control" id="username" name="username">
+      </div>
+      <div class="form-group p-4">
+        <label for="password">Password:</label>
+        <input formControlName="psw" type="password" class="form-control" id="password" name="password">
+      </div>
+      <div class="text-center">
+        <button type="submit" (click)="login()" class="btn btn-primary">Login</button>
+    </div>
+    </form>
+    <p class="text-center mt-2 ">dont have account? <a href="register">create account</a></p>
+
+  </div>
